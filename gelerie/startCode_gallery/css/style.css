@@ -119,10 +119,26 @@ main {
 .button--center {position: relative; transform: translate(-50%, 0%); left: 50%; margin-top: 1rem;}
 
 /*GALERIE*/
-.title--modify{
+.gItem{
+    display:grid;
+    max-width: fit-content;
     
 }
+#galerie{
+    background-color: #4C2121;
+}
 
+.gallery{
+    display: grid;
+    grid-gap: 16px;
+    overflow-x: scroll;
+    padding: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-row-end:auto;
+
+}
 
 
 @media (min-width: 700px) {
